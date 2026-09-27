@@ -141,8 +141,8 @@ flowchart TB
 ### One-command setup
 
 ```powershell
-git clone https://github.com/YOUR_ACCOUNT/motion-master.git
-cd motion-master
+git clone https://github.com/TylabAI/motionmaster.git
+cd motionmaster
 .\setup.ps1
 .\start.bat
 ```
