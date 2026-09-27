@@ -1,0 +1,39 @@
+{
+  "name": "motion-master",
+  "version": "1.6.2",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "card-packs/*"
+  ],
+  "scripts": {
+    "bootstrap:asr": "node scripts/bootstrap-asr.mjs",
+    "predev": "node scripts/bootstrap-asr.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build -w @motion-master/studio-web",
+    "test": "vitest run",
+    "test:mcp": "node scripts/smoke-mcp.mjs",
+    "mcp": "tsx packages/motion-mcp/src/server.ts",
+    "doctor": "node scripts/doctor.mjs",
+    "dev:web": "npm run dev -w @motion-master/studio-web --",
+    "api": "tsx packages/motion-api/src/server.ts",
+    "prestart": "node scripts/bootstrap-asr.mjs",
+    "start": "tsx packages/motion-api/src/server.ts",
+    "test:api": "node scripts/smoke-api.mjs",
+    "test:render": "tsx scripts/render-smoke.ts",
+    "test:cards": "tsx scripts/render-card-catalog.ts",
+    "package:win": "powershell -ExecutionPolicy Bypass -File scripts/package-win.ps1",
+    "package:source": "node scripts/package-source-release.mjs",
+    "test:shotcraft": "tsx scripts/render-shotcraft-smoke.ts",
+    "test:asr-ui": "node scripts/verify-asr-model-manager.mjs",
+    "analyze:media": "node scripts/analyze-media.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}

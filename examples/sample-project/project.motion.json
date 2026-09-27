@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "0.1.0",
+  "projectId": "sample-project",
+  "version": 0,
+  "title": "口播动效示例",
+  "canvas": {"width": 1080, "height": 1920, "fps": 30, "durationFrames": 300},
+  "styleProfileId": "graphite-light",
+  "status": "editable",
+  "timeline": {
+    "timelineId": "timeline-main",
+    "tracks": [
+      {"trackId": "video-base", "kind": "video", "locked": true},
+      {"trackId": "overlay-main", "kind": "motion", "locked": false}
+    ],
+    "segments": [],
+    "cards": []
+  }
+}

@@ -1,0 +1,4177 @@
+[
+  {
+    "cardType": "ambient-wash",
+    "name": "氛围网格",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "科技背景",
+      "level3": "网格氛围"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "section-head",
+    "name": "章节导航",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "章节组织",
+      "level3": "章节标题"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "metric-focus",
+    "name": "核心数字",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "指标展示",
+      "level3": "核心数字"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "comparison-bars",
+    "name": "左右对比条",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "对比分析",
+      "level3": "双条对比"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "quote-lines",
+    "name": "金句逐行",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "观点强化",
+      "level3": "逐行金句"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "info-board",
+    "name": "信息面板",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "信息说明",
+      "level3": "信息面板"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "process-steps",
+    "name": "流程节点",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "步骤节点"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "lower-third",
+    "name": "人物名条",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "人物名条"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "kinetic-words",
+    "name": "重点词阵列",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "关键词强化",
+      "level3": "词语阵列"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "strike-flip",
+    "name": "划线纠错",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "观点纠偏",
+      "level3": "划线翻转"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "stat-grid",
+    "name": "数据矩阵",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "指标展示",
+      "level3": "数据矩阵"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "radial-gauge",
+    "name": "环形指标",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "指标展示",
+      "level3": "环形进度"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "ranking-list",
+    "name": "排行列表",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "列表排序",
+      "level3": "排行列表"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "milestone-line",
+    "name": "里程碑线",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "时间脉络",
+      "level3": "里程碑线"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "checklist",
+    "name": "验收清单",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "清单说明",
+      "level3": "验收清单"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "before-after",
+    "name": "前后对照",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "对比分析",
+      "level3": "前后双栏"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "callout-note",
+    "name": "侧边批注",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "辅助标注",
+      "level3": "侧边批注"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "three-column",
+    "name": "三列架构",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "架构说明",
+      "level3": "三列结构"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "mini-chart",
+    "name": "迷你趋势图",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "趋势展示",
+      "level3": "柱状趋势"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "conclusion-card",
+    "name": "结论收束",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "章节收束",
+      "level3": "结论卡"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "explain-scene",
+    "name": "讲解场景",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "讲解编排",
+      "level3": "词句绑定场景"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-blur-slide",
+    "name": "模糊滑入",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "模糊滑入"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-marker-underline",
+    "name": "马克笔下划线",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "重点强调",
+      "level3": "马克笔线"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-card-stack",
+    "name": "卡片扇展",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "阵列展示",
+      "level3": "卡片扇展"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-radial-wave",
+    "name": "径向波",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "图形氛围",
+      "level3": "径向点阵"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-theme-sweep",
+    "name": "主题扫场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "主题扫场"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-crash-zoom",
+    "name": "急推聚焦",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "镜头聚焦",
+      "level3": "急推聚焦"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-scanline-focus",
+    "name": "扫描标注",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "识别标注",
+      "level3": "扫描框"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "shotcraft-pull-back",
+    "name": "拉远孤立",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "镜头收束",
+      "level3": "拉远孤立"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "rve-gradient-title",
+    "name": "渐变标题",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "章节组织",
+      "level3": "渐变标题"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/gradient-shift.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-metric-card",
+    "name": "指标卡 Pro",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "指标展示",
+      "level3": "指标卡 Pro"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/stat-counter.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-donut-chart",
+    "name": "环形数据图",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表展示",
+      "level3": "环形数据图"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/donut-chart.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-comparison-chart",
+    "name": "前后对比图",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "对比分析",
+      "level3": "前后对比图"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/comparison-chart.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-animated-list",
+    "name": "动效列表",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "动效列表"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/animated-list.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-quote-card",
+    "name": "高级引言卡",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "观点强化",
+      "level3": "高级引言卡"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/quote-card.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-chapter-title",
+    "name": "章节标题 Pro",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "章节组织",
+      "level3": "章节标题 Pro"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/chapter-title.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-bento-grid",
+    "name": "Bento 信息格",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "信息说明",
+      "level3": "Bento 信息格"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/bento-grid",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-circular-progress",
+    "name": "圆环进度",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "指标展示",
+      "level3": "圆环进度"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/circular-progress.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-glitch-text",
+    "name": "故障文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "故障文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/glitch-text.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-sound-wave",
+    "name": "声音波形",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "图形氛围",
+      "level3": "声音波形"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/sound-wave.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "rve-grid-pulse",
+    "name": "脉冲网格",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "科技背景",
+      "level3": "脉冲网格"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/grid-pulse.tsx",
+      "author": "reactvideoeditor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "MotionMaster 本地重建样式，非上游组件的直接加载。"
+    },
+    "integration": "local-recreation"
+  },
+  {
+    "cardType": "catalog-rve-animated-text",
+    "name": "动态 · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "动态 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/animated-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-area-chart",
+    "name": "面积 · 图表",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "面积 · 图表"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/area-chart.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-blinds-transition",
+    "name": "Blinds · 转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "Blinds · 转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/blinds-transition.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-bokeh-circles",
+    "name": "Bokeh · Circles",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "Bokeh · Circles"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/bokeh-circles.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-bounce-text",
+    "name": "弹跳 · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "弹跳 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/bounce-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-bubble-pop-text",
+    "name": "气泡 · Pop · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "气泡 · Pop · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/bubble-pop-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-camera-shake",
+    "name": "镜头 · Shake",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "镜头 · Shake"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/camera-shake.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-card-flip",
+    "name": "卡片 · Flip",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "卡片 · Flip"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/card-flip.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-chart-animation",
+    "name": "图表 · 动画",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "图表 · 动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/chart-animation.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-cinematic-title-intro",
+    "name": "电影感 · 标题 · 开场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "电影感 · 标题 · 开场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/cinematic-title-intro.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-clock-wipe",
+    "name": "Clock · Wipe",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "Clock · Wipe"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/clock-wipe.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-countdown-intro",
+    "name": "倒计时 · 开场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "倒计时 · 开场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/countdown-intro.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-countdown-timer",
+    "name": "倒计时 · 计时器",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "倒计时 · 计时器"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/countdown-timer.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-credits-roll",
+    "name": "片尾字幕 · Roll",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "片尾字幕 · Roll"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/credits-roll.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-cross-dissolve",
+    "name": "Cross · 溶解",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "Cross · 溶解"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/cross-dissolve.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-end-card",
+    "name": "结尾 · 卡片",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "结尾 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/end-card.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-fade-through-black",
+    "name": "淡化 · Through · Black",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "淡化 · Through · Black"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/fade-through-black.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-film-burn",
+    "name": "胶片 · Burn",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "胶片 · Burn"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/film-burn.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-floating-bubble-text",
+    "name": "漂浮 · 气泡 · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "漂浮 · 气泡 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/floating-bubble-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-gallery-grid",
+    "name": "画廊 · 网格",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "画廊 · 网格"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/gallery-grid.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-geometric-patterns",
+    "name": "几何 · Patterns",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "几何 · Patterns"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/geometric-patterns.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-image-carousel",
+    "name": "图片 · Carousel",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "图片 · Carousel"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/image-carousel.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-image-comparison-slider",
+    "name": "图片 · 对比 · Slider",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "图片 · 对比 · Slider"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/image-comparison-slider.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-image-zoom-reveal",
+    "name": "图片 · 缩放 · 揭示",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "图片 · 缩放 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/image-zoom-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-iris-transition",
+    "name": "光圈 · 转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "光圈 · 转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/iris-transition.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-ken-burns",
+    "name": "Ken · Burns",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "Ken · Burns"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/ken-burns.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-letterbox-reveal",
+    "name": "Letterbox · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Letterbox · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/letterbox-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-line-chart",
+    "name": "折线 · 图表",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "折线 · 图表"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/line-chart.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-liquid-wave",
+    "name": "流体 · Wave",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "流体 · Wave"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/liquid-wave.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-blur-reveal",
+    "name": "标志 · 模糊 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 模糊 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-blur-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-bounce-drop",
+    "name": "标志 · 弹跳 · Drop",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 弹跳 · Drop"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-bounce-drop.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-fade-reveal",
+    "name": "标志 · 淡化 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 淡化 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-fade-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-glitch-reveal",
+    "name": "标志 · 故障 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 故障 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-glitch-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-scale-rotate",
+    "name": "标志 · Scale · Rotate",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · Scale · Rotate"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-scale-rotate.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-spin-reveal",
+    "name": "标志 · Spin · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · Spin · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-spin-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-split-reveal",
+    "name": "标志 · 分屏 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 分屏 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-split-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-stroke-draw",
+    "name": "标志 · Stroke · Draw",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · Stroke · Draw"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-stroke-draw.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-logo-typewriter",
+    "name": "标志 · 打字机",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 打字机"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/logo-typewriter.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-lower-third",
+    "name": "下三分之一 · 名条",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "下三分之一 · 名条"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/lower-third.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-masonry-gallery",
+    "name": "Masonry · 画廊",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "Masonry · 画廊"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/masonry-gallery.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-matrix-rain",
+    "name": "矩阵 · Rain",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "矩阵 · Rain"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/matrix-rain.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-morph-transition",
+    "name": "变形 · 转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "变形 · 转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/morph-transition.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-noise-grain",
+    "name": "噪点 · Grain",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "噪点 · Grain"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/noise-grain.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-notification-pop",
+    "name": "通知 · Pop",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "通知 · Pop"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/notification-pop.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-parallax-pan",
+    "name": "视差 · Pan",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "视差 · Pan"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/parallax-pan.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-particle-explosion",
+    "name": "粒子 · Explosion",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "粒子 · Explosion"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/particle-explosion.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-photo-stack",
+    "name": "照片 · Stack",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "照片 · Stack"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/photo-stack.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-picture-in-picture",
+    "name": "Picture · In · Picture",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Picture · In · Picture"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/picture-in-picture.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-pie-chart",
+    "name": "饼图 · 图表",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "饼图 · 图表"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/pie-chart.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-pixel-transition",
+    "name": "像素 · 转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "像素 · 转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/pixel-transition.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-polaroid-frame",
+    "name": "拍立得 · Frame",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "拍立得 · Frame"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/polaroid-frame.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-popping-text",
+    "name": "弹出 · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "弹出 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/popping-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-progress-bars",
+    "name": "进度 · Bars",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "进度 · Bars"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/progress-bars.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-progress-steps",
+    "name": "进度 · 步骤",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "进度 · 步骤"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/progress-steps.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-pulsing-text",
+    "name": "脉冲 · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "脉冲 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/pulsing-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-push-transition",
+    "name": "Push · 转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "Push · 转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/push-transition.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-rotating-carousel",
+    "name": "旋转 · Carousel",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "旋转 · Carousel"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/rotating-carousel.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-slide-text",
+    "name": "滑动 · 文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "滑动 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/slide-text.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-slide-wipe",
+    "name": "滑动 · Wipe",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "滑动 · Wipe"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/slide-wipe.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-split-screen",
+    "name": "分屏 · 屏幕",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "分屏 · 屏幕"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/split-screen.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-spotlight-reveal",
+    "name": "聚光 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "聚光 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/spotlight-reveal.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-starfield",
+    "name": "星空",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "星空"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/starfield.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-subscribe-reminder",
+    "name": "关注提醒 · Reminder",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "关注提醒 · Reminder"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/subscribe-reminder.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-text-highlight",
+    "name": "文字 · Highlight",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "文字 · Highlight"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/text-highlight.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-title-split",
+    "name": "标题 · 分屏",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标题 · 分屏"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/title-split.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-typewriter-subtitle",
+    "name": "打字机 · Subtitle",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "打字机 · Subtitle"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/typewriter-subtitle.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-vignette-pulse",
+    "name": "暗角 · Pulse",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "暗角 · Pulse"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/vignette-pulse.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-whip-pan",
+    "name": "甩镜 · Pan",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "甩镜 · Pan"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/whip-pan.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-zoom-pulse",
+    "name": "缩放 · Pulse",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "缩放 · Pulse"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/zoom-pulse.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-rve-zoom-through",
+    "name": "缩放 · Through",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "缩放 · Through"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/reactvideoeditor/remotion-templates/blob/main/templates/zoom-through.tsx",
+      "author": "React Video Editor",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-achievement-unlock",
+    "name": "成就 · Unlock",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "成就 · Unlock"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/achievement-unlock",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-agenda-reveal",
+    "name": "议程 · 揭示",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "议程 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/agenda-reveal",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-app-feature-callout",
+    "name": "App · 功能 · Callout",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "App · 功能 · Callout"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/app-feature-callout",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-appointment-booking",
+    "name": "预约 · Booking",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "预约 · Booking"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/appointment-booking",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-bar-chart-reveal",
+    "name": "柱状 · 图表 · 揭示",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "柱状 · 图表 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/bar-chart-reveal",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-before-after",
+    "name": "之前 · 之后",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "之前 · 之后"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/before-after",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-bold-text-punch",
+    "name": "Bold · 文字 · Punch",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Bold · 文字 · Punch"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/bold-text-punch",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-cart-animation",
+    "name": "Cart · 动画",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Cart · 动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/cart-animation",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-changelog",
+    "name": "更新日志",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "更新日志"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/changelog",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-collab-card",
+    "name": "Collab · 卡片",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Collab · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/collab-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-concept-breakdown",
+    "name": "概念 · Breakdown",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "概念 · Breakdown"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/concept-breakdown",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-countdown-timer",
+    "name": "倒计时 · 计时器",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "倒计时 · 计时器"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/countdown-timer",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-culture-reel",
+    "name": "文化 · Reel",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "文化 · Reel"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/culture-reel",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-day-summary",
+    "name": "Day · Summary",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Day · Summary"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/day-summary",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-discount-countdown",
+    "name": "折扣 · 倒计时",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "折扣 · 倒计时"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/discount-countdown",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-drag-drop-demo",
+    "name": "Drag · Drop · Demo",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Drag · Drop · Demo"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/drag-drop-demo",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-fade-slide-up",
+    "name": "淡化 · 滑动 · Up",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "淡化 · 滑动 · Up"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/fade-slide-up",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-feature-showcase",
+    "name": "功能 · Showcase",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "功能 · Showcase"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/feature-showcase",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-flashcard-flip",
+    "name": "闪卡 · Flip",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "闪卡 · Flip"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/flashcard-flip",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-gradient-text",
+    "name": "渐变 · 文字",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "渐变 · 文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/gradient-text",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-intro-outro",
+    "name": "开场 · 收尾",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "开场 · 收尾"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/intro-outro",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-job-posting",
+    "name": "Job · Posting",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "Job · Posting"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/job-posting",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-launch-day",
+    "name": "Launch · Day",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Launch · Day"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/launch-day",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-leaderboard",
+    "name": "排行榜",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "排行榜"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/leaderboard",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-lesson-intro",
+    "name": "课程 · 开场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "课程 · 开场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/lesson-intro",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-level-up",
+    "name": "Level · Up",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Level · Up"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/level-up",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-listing-card",
+    "name": "Listing · 卡片",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "Listing · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/listing-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-logo-reveal",
+    "name": "标志 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "标志 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/logo-reveal",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-meme-card",
+    "name": "Meme · 卡片",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Meme · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/meme-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-metric-card",
+    "name": "指标 · 卡片",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "指标 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/metric-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-milestone-counter",
+    "name": "里程碑 · Counter",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "里程碑 · Counter"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/milestone-counter",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-modal-explainer",
+    "name": "Modal · Explainer",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Modal · Explainer"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/modal-explainer",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-onboarding-flow",
+    "name": "引导流程 · Flow",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "引导流程 · Flow"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/onboarding-flow",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-patient-journey",
+    "name": "Patient · Journey",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "Patient · Journey"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/patient-journey",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-payment-flow",
+    "name": "支付 · Flow",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "支付 · Flow"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/payment-flow",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-portfolio-breakdown",
+    "name": "组合 · Breakdown",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "组合 · Breakdown"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/portfolio-breakdown",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-pricing-comparison",
+    "name": "定价 · 对比",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "定价 · 对比"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/pricing-comparison",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-product-hunt",
+    "name": "产品 · Hunt",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "产品 · Hunt"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/product-hunt",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-product-reveal",
+    "name": "产品 · 揭示",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "产品 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/product-reveal",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-profile-card",
+    "name": "人物资料 · 卡片",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "人物资料 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/profile-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-property-tour",
+    "name": "房产 · Tour",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "房产 · Tour"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/property-tour",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-quiz-result",
+    "name": "测验 · Result",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "测验 · Result"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/quiz-result",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-quote-card",
+    "name": "引言 · 卡片",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "引言 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/quote-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-saas-hero",
+    "name": "SaaS · Hero",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "SaaS · Hero"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/saas-hero",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-sales-card",
+    "name": "销售 · 卡片",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "销售 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/sales-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-screen-showcase",
+    "name": "屏幕 · Showcase",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "屏幕 · Showcase"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/screen-showcase",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-social-post",
+    "name": "社交 · Post",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "社交 · Post"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/social-post",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-speaker-card",
+    "name": "嘉宾 · 卡片",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "嘉宾 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/speaker-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-spring-scale-in",
+    "name": "Spring · Scale · In",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Spring · Scale · In"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/spring-scale-in",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-staggered-words",
+    "name": "错落 · Words",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "错落 · Words"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/staggered-words",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-stats-dashboard",
+    "name": "Stats · 仪表盘",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "Stats · 仪表盘"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/stats-dashboard",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-step-explainer",
+    "name": "Step · Explainer",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Step · Explainer"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/step-explainer",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-stock-ticker",
+    "name": "行情 · Ticker",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "行情 · Ticker"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/stock-ticker",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-team-intro",
+    "name": "团队 · 开场",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "团队 · 开场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/team-intro",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-testimonial-card",
+    "name": "证言 · 卡片",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "证言 · 卡片"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/testimonial-card",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-toggle-switch",
+    "name": "开关 · Switch",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "开关 · Switch"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/toggle-switch",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-typewriter-reveal",
+    "name": "打字机 · 揭示",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "打字机 · 揭示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/typewriter-reveal",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-ui-walkthrough",
+    "name": "Ui · 导览",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "Ui · 导览"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/ui-walkthrough",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-virtual-walkthrough",
+    "name": "Virtual · 导览",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "Virtual · 导览"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/virtual-walkthrough",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-locomotion-wellness-stats",
+    "name": "健康 · Stats",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "健康 · Stats"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/locomotion-pro/locomotion/tree/main/src/templates/wellness-stats",
+      "author": "Locomotion",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-captions-kit-karaoke-fill",
+    "name": "卡拉 OK 填充",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "卡拉 OK 填充"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/Fats403/remotion-captions-kit/blob/main/src/presets/karaoke-fill.tsx",
+      "author": "Captions Kit",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-captions-kit-kinetic-slam",
+    "name": "动感重击字幕",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "动感重击字幕"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/Fats403/remotion-captions-kit/blob/main/src/presets/kinetic-slam.tsx",
+      "author": "Captions Kit",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-captions-kit-pill-karaoke",
+    "name": "胶囊卡拉 OK",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "胶囊卡拉 OK"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/Fats403/remotion-captions-kit/blob/main/src/presets/pill-karaoke.tsx",
+      "author": "Captions Kit",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-captions-kit-weight-shift",
+    "name": "字重切换字幕",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "字重切换字幕"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/Fats403/remotion-captions-kit/blob/main/src/presets/weight-shift.tsx",
+      "author": "Captions Kit",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-captions-kit-neon-glow",
+    "name": "霓虹高亮字幕",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "霓虹高亮字幕"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/Fats403/remotion-captions-kit/blob/main/src/presets/neon-glow.tsx",
+      "author": "Captions Kit",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-captions-kit-editorial-emphasis",
+    "name": "编辑式强调字幕",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "编辑式强调字幕"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/Fats403/remotion-captions-kit/blob/main/src/presets/editorial-emphasis.tsx",
+      "author": "Captions Kit",
+      "license": "MIT",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-motion-canvas-asset-code",
+    "name": "代码资产拆解",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "代码资产拆解"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/motion-canvas/examples/tree/master/examples/asset-code",
+      "author": "Motion Canvas",
+      "license": "MIT",
+      "originalFormat": "motion-canvas",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-motion-canvas-anniversary",
+    "name": "周年叙事动画",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "周年叙事动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/motion-canvas/examples/tree/master/examples/anniversary",
+      "author": "Motion Canvas",
+      "license": "MIT",
+      "originalFormat": "motion-canvas",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-motion-canvas-smooth-parallax",
+    "name": "平滑视差讲解",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "平滑视差讲解"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/motion-canvas/examples/tree/master/examples/smooth-parallax",
+      "author": "Motion Canvas",
+      "license": "MIT",
+      "originalFormat": "motion-canvas",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-motion-canvas-motion-canvas",
+    "name": "矢量流程讲解",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "矢量流程讲解"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/motion-canvas/examples/tree/master/examples/motion-canvas",
+      "author": "Motion Canvas",
+      "license": "MIT",
+      "originalFormat": "motion-canvas",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-motion-canvas-deferred-lighting",
+    "name": "延迟光照分解",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "延迟光照分解"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/motion-canvas/examples/tree/master/examples/deferred-lighting",
+      "author": "Motion Canvas",
+      "license": "MIT",
+      "originalFormat": "motion-canvas",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-motion-canvas-logo",
+    "name": "矢量标志绘制",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "矢量标志绘制"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/motion-canvas/examples/tree/master/examples/logo",
+      "author": "Motion Canvas",
+      "license": "MIT",
+      "originalFormat": "motion-canvas",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-audiogram",
+    "name": "音频节目卡",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "音频节目卡"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-music-visualization",
+    "name": "音乐可视化",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "音乐可视化"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-text-to-speech",
+    "name": "语音合成口播",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "语音合成口播"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-react-three-fiber",
+    "name": "三维场景卡",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "三维场景卡"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-skia",
+    "name": "Skia 绘图动效",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Skia 绘图动效"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-video-editor-timeline",
+    "name": "剪辑时间轴演示",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "剪辑时间轴演示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-clippkit-components",
+    "name": "Clippkit 组件",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Clippkit 组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-remotion-bits",
+    "name": "Remotion Bits",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Remotion Bits"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-swiftclip-templates",
+    "name": "SwiftClip 模板",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "SwiftClip 模板"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-rendercomp-free",
+    "name": "RenderComp 模板",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "RenderComp 模板"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-lexington-motion",
+    "name": "循环宣传动效",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "循环宣传动效"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-motion-blur",
+    "name": "运动模糊",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "运动模糊"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-noise-effect",
+    "name": "噪点质感",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "噪点质感"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-path-animation",
+    "name": "路径描边动画",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "流程说明",
+      "level3": "路径描边动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-glitch-effect",
+    "name": "故障效果",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "故障效果"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-remotion-animated",
+    "name": "通用缓动组件",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "通用缓动组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-transition-series",
+    "name": "连续转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "连续转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-animate-text",
+    "name": "文字编排动画",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "文字编排动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-subtitle-styles",
+    "name": "字幕样式组件",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "字幕样式组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-github-unwrapped",
+    "name": "年度数据回顾",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "年度数据回顾"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-podcast-maker",
+    "name": "播客视频卡",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "播客视频卡"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-stargazer",
+    "name": "星标增长可视化",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "星标增长可视化"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-mockoops",
+    "name": "产品界面演示",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "产品界面演示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-product-hunt-today",
+    "name": "产品发布榜单",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "产品发布榜单"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-remotion-weather",
+    "name": "天气信息卡",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "天气信息卡"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-conference-speaker-card",
+    "name": "会议嘉宾卡",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "会议嘉宾卡"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-datavids",
+    "name": "数据视频",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "数据视频"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-bar-race-chart",
+    "name": "动态排名柱图",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "动态排名柱图"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-tone-music",
+    "name": "音乐节奏动画",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "音乐节奏动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-glb-animation",
+    "name": "GLB 模型动画",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "GLB 模型动画"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-typewriter",
+    "name": "打字机文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "打字机文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-d3-visualization",
+    "name": "D3 数据可视化",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "D3 数据可视化"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-greenscreen",
+    "name": "绿幕抠除",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "绿幕抠除"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-noise-visualization",
+    "name": "噪声可视化",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "噪声可视化"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-audio-visualization",
+    "name": "音频波形可视化",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "图表与指标",
+      "level3": "音频波形可视化"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-3d-text",
+    "name": "三维文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "三维文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-wavy-tiktok",
+    "name": "波浪短视频文字",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "波浪短视频文字"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-spring-loaded",
+    "name": "弹簧发布动效",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "弹簧发布动效"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-three-particles",
+    "name": "三维粒子",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "三维粒子"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-text-morphing",
+    "name": "文字变形",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "文字变形"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-text-warping",
+    "name": "文字扭曲",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "文字扭曲"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-gltf-animation",
+    "name": "GLTF 模型展示",
+    "classification": {
+      "level1": "产品演示",
+      "level2": "媒体展示",
+      "level3": "GLTF 模型展示"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-opengl-transitions",
+    "name": "OpenGL 转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "OpenGL 转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-twitch-stinger",
+    "name": "直播遮罩转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "直播遮罩转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-animejs",
+    "name": "Anime.js 编排",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Anime.js 编排"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-shader",
+    "name": "着色器动效",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "图形氛围",
+      "level3": "着色器动效"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-jump-cuts",
+    "name": "跳切衔接",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "跳切衔接"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-light-leak",
+    "name": "电影漏光转场",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "场景转场",
+      "level3": "电影漏光转场"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-remocn",
+    "name": "Remocn 组件",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Remocn 组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-remotionui",
+    "name": "RemotionUI 组件",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "RemotionUI 组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-onda-components",
+    "name": "Onda 动效组件",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "Onda 动效组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-tiktok-text-box",
+    "name": "短视频文本框",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "动态字幕",
+      "level3": "短视频文本框"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-remotion-resource-snapcn",
+    "name": "软件界面演示组件",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "软件界面演示组件"
+    },
+    "source": {
+      "sourceUrl": "https://github.com/remotion-dev/remotion/blob/main/packages/docs/docs/resources.mdx",
+      "author": "Remotion 官方资源",
+      "originalFormat": "remotion",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "generic-source-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-loading-6",
+    "name": "加载动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "加载动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-people-dance",
+    "name": "人物舞蹈动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "人物舞蹈动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-decision-choice",
+    "name": "决策选择动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "决策选择动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-creative-thinking",
+    "name": "创意思考动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "创意思考动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-meteorology",
+    "name": "气象动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "气象动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-loading-50",
+    "name": "加载动画大全",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "加载动画大全"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-text",
+    "name": "文字动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "文字动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-marine",
+    "name": "海洋动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "海洋动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-law",
+    "name": "法律动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "法律动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-engineering-system",
+    "name": "工程系统动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "工程系统动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-teamwork",
+    "name": "团队协作动画包",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "团队协作动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-job-occupations",
+    "name": "职业角色动画包",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "人物信息",
+      "level3": "职业角色动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-brain-innovation",
+    "name": "大脑创新动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "大脑创新动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-factory-manufacturing",
+    "name": "工厂制造动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "工厂制造动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "catalog-lottiefiles-small-business",
+    "name": "小型商业动画包",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "文字入场",
+      "level3": "小型商业动画包"
+    },
+    "source": {
+      "sourceUrl": "https://lottiefiles.com/categories/motion-graphic",
+      "author": "LottieFiles",
+      "originalFormat": "lottie/dotlottie",
+      "adaptationNotes": "来源目录条目，使用 MotionMaster 通用样式呈现；未直接加载上游实现或远程素材。"
+    },
+    "integration": "pack-entry-generic-preview"
+  },
+  {
+    "cardType": "hv-frame-bold-poster",
+    "name": "宣言海报",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "宣言海报"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-bold-signal",
+    "name": "强信号标题",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "强信号标题"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-build-minimal",
+    "name": "极简留白",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "极简留白"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-creative-voltage",
+    "name": "创意电压",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "创意电压"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-data-chart-nyt",
+    "name": "编辑式柱图",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "HTML Video 全模板",
+      "level3": "编辑式柱图"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-data-rollup",
+    "name": "数字增长",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "HTML Video 全模板",
+      "level3": "数字增长"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-decision-tree",
+    "name": "决策树",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "决策树"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-electric-studio",
+    "name": "双色金句",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "双色金句"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-glitch-title",
+    "name": "故障标题",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "故障标题"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-kinetic-type",
+    "name": "动态排字",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "动态排字"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-light-leak-cinema",
+    "name": "电影漏光",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "HTML Video 全模板",
+      "level3": "电影漏光"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-liquid-bg-hero",
+    "name": "流体渐变",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "HTML Video 全模板",
+      "level3": "流体渐变"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-logo-outro",
+    "name": "品牌收尾",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "品牌收尾"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-nyt-graph",
+    "name": "编辑式折线",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "HTML Video 全模板",
+      "level3": "编辑式折线"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-pentagram-stat",
+    "name": "巨型指标",
+    "classification": {
+      "level1": "数据信息",
+      "level2": "HTML Video 全模板",
+      "level3": "巨型指标"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-play-mode",
+    "name": "弹性玩趣",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "弹性玩趣"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-product-promo",
+    "name": "产品展示",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "产品展示"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-product-promo-30s",
+    "name": "产品短片 · 30秒",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "产品短片 · 30秒"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-swiss-grid",
+    "name": "瑞士网格",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "瑞士网格"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-takram-organic",
+    "name": "有机关系图",
+    "classification": {
+      "level1": "结构叙事",
+      "level2": "HTML Video 全模板",
+      "level3": "有机关系图"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-vignelli",
+    "name": "红黑大字",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "红黑大字"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-frame-warm-grain",
+    "name": "暖纸颗粒",
+    "classification": {
+      "level1": "背景氛围",
+      "level2": "HTML Video 全模板",
+      "level3": "暖纸颗粒"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "hv-vfx-text-cursor",
+    "name": "终端打字",
+    "classification": {
+      "level1": "文字强调",
+      "level2": "HTML Video 全模板",
+      "level3": "终端打字"
+    },
+    "integration": "v1.3-baseline"
+  },
+  {
+    "cardType": "html-motion",
+    "name": "HTML 自定义动效",
+    "classification": {
+      "level1": "视觉动效",
+      "level2": "HTML 扩展",
+      "level3": "自定义场景"
+    },
+    "integration": "v1.3-baseline"
+  }
+]

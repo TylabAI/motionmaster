@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+  <title id="title">MotionMaster</title>
+  <desc id="desc">免费开源的 Web 动效生成、编辑与 Agent 协作工作台</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b10"/>
+      <stop offset="0.58" stop-color="#101820"/>
+      <stop offset="1" stop-color="#092c31"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#00e5d4" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#00e5d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="1180" cy="160" r="320" fill="url(#glow)"/>
+  <g opacity=".22" stroke="#56f1e4">
+    <path d="M0 80H1440M0 160H1440M0 240H1440M0 320H1440"/>
+    <path d="M120 0V420M280 0V420M440 0V420M600 0V420M760 0V420M920 0V420M1080 0V420M1240 0V420"/>
+  </g>
+  <rect x="94" y="80" width="74" height="74" rx="18" fill="#00d7c7"/>
+  <path d="M116 132V101h11l9 16 9-16h11v31h-10v-15l-10 16-10-16v15z" fill="#041312"/>
+  <text x="94" y="225" fill="#f4f7f8" font-family="Segoe UI,Arial,sans-serif" font-size="72" font-weight="750" letter-spacing="3">MOTIONMASTER</text>
+  <text x="98" y="278" fill="#8cf8ed" font-family="Segoe UI,Arial,sans-serif" font-size="29">免费开源的 Web 动效生成、编辑与 Agent 协作工作台</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="20">
+    <rect x="98" y="322" width="168" height="46" rx="23" fill="#15262a" stroke="#2f7f79"/>
+    <text x="124" y="352" fill="#d9fffb">Web 编辑台</text>
+    <rect x="282" y="322" width="168" height="46" rx="23" fill="#15262a" stroke="#2f7f79"/>
+    <text x="314" y="352" fill="#d9fffb">动效生成</text>
+    <rect x="466" y="322" width="168" height="46" rx="23" fill="#15262a" stroke="#2f7f79"/>
+    <text x="494" y="352" fill="#d9fffb">MCP / Agent</text>
+    <rect x="650" y="322" width="190" height="46" rx="23" fill="#15262a" stroke="#2f7f79"/>
+    <text x="694" y="352" fill="#d9fffb">免费开源</text>
+  </g>
+</svg>

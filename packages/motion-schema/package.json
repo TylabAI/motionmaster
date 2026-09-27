@@ -1,0 +1,8 @@
+{
+  "name": "@motion-master/schema",
+  "version": "1.6.2",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {"zod": "4.5.4"}
+}

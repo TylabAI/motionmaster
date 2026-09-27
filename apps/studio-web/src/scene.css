@@ -1,0 +1,17 @@
+.segment-row{min-height:34px}
+.segment-block{position:absolute;top:4px;height:24px;min-width:22px;border:1px solid rgba(85,214,232,.45);background:rgba(85,214,232,.12);color:var(--text);overflow:hidden;z-index:3;cursor:pointer}
+.segment-block span{display:block;padding:0 6px;font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.segment-block.selected{outline:1px solid var(--accent);background:rgba(255,90,54,.18)}
+.segment-inspector{padding:12px 0;border-bottom:1px solid var(--line)}
+.segment-inspector h3{font-size:9px;letter-spacing:2px;color:var(--muted);margin:0 0 8px}
+.segment-inspector strong{font-size:13px}
+.segment-inspector p{font-size:10px;line-height:1.5;color:var(--muted)}
+.segment-inspector div{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.segment-inspector button{height:32px;border:1px solid var(--line);background:var(--surface-2);color:var(--text);cursor:pointer}
+.timeline-card{touch-action:none;user-select:none;cursor:grab;padding:0 9px}
+.timeline-card:active,.timeline-card.dragging{cursor:grabbing;outline:1px solid var(--accent);filter:brightness(1.18)}
+.timeline-card span{pointer-events:none}
+.timeline-handle{position:absolute;top:0;bottom:0;width:8px;z-index:2;cursor:ew-resize;background:transparent}
+.timeline-handle:after{content:"";position:absolute;top:6px;bottom:6px;width:2px;border-radius:2px;background:rgba(255,255,255,.45);opacity:.45}
+.timeline-card:hover .timeline-handle:after,.timeline-card.selected .timeline-handle:after{opacity:1;background:var(--accent)}
+.handle-left{left:0}.handle-left:after{left:2px}.handle-right{right:0}.handle-right:after{right:2px}

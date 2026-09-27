@@ -1,0 +1,35 @@
+{
+  "id": "motion-studio",
+  "name": "Motion Studio",
+  "version": "1.6.2",
+  "schemaVersion": "0.2.0",
+  "entrypoints": {
+    "studio": "npm start",
+    "mcp": "npm run mcp",
+    "doctor": "npm run doctor",
+    "dev": "npm run dev"
+  },
+  "mcp": {
+    "transport": "stdio",
+    "command": "npm",
+    "args": [
+      "run",
+      "mcp"
+    ],
+    "workingDirectory": "."
+  },
+  "capabilities": {
+    "projectEditing": true,
+    "srtImport": true,
+    "timelineEditing": true,
+    "schemaDrivenCards": true,
+    "realVideoPreview": true,
+    "jsonRoundTrip": true,
+    "lint": true,
+    "previewFrames": true,
+    "previewVideo": true,
+    "mp4Export": true,
+    "alphaExport": true,
+    "stillRender": true
+  }
+}

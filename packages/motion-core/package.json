@@ -1,0 +1,11 @@
+{
+  "name": "@motion-master/core",
+  "version": "1.6.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./timing": "./src/timing.ts"
+  },
+  "dependencies": {"@motion-master/schema": "*"}
+}

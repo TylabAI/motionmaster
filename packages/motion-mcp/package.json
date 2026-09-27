@@ -1,0 +1,15 @@
+{
+  "name": "@motion-master/mcp",
+  "version": "1.6.2",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@motion-master/cards-starter": "*",
+    "@motion-master/core": "*",
+    "zod": "4.5.4",
+    "@motion-master/compiler": "*",
+    "@motion-master/schema": "*",
+    "@motion-master/render": "*"
+  }
+}

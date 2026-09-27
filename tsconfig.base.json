@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@motion-master/schema": ["./packages/motion-schema/src/index.ts"],
+      "@motion-master/core/timing": ["./packages/motion-core/src/timing.ts"],
+      "@motion-master/core": ["./packages/motion-core/src/index.ts"],
+      "@motion-master/cards-starter": ["./card-packs/starter/src/index.tsx"],
+      "@motion-master/cards-shotcraft-motion": ["./card-packs/shotcraft-motion/src/index.tsx"]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "视频动效大师"
+  short_description: "用 SRT 和本地 MCP 生成、校验并交付动效编排"
+  default_prompt: "Use $video-motion-master to turn this SRT into a linted MotionMaster overlay project and verify the preview artifacts."
+

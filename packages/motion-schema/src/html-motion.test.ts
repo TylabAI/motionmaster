@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';
+import {htmlMotionSchema,defaultHtmlMotion} from './html-motion';
+it('accepts editable self-contained HTML/CSS/SVG',()=>{expect(htmlMotionSchema.parse(defaultHtmlMotion).fields).toHaveLength(2);expect(()=>htmlMotionSchema.parse({...defaultHtmlMotion,html:'<svg xmlns="http://www.w3.org/2000/svg"><path d="M0 0L10 10"/></svg>'})).not.toThrow();});
+it('rejects executable content, network resources and duplicate parameters',()=>{for(const html of ['<script>alert(1)</script>','<div onclick="alert(1)">a</div>','<img src="https://example.com/a.png">','<style>@import "a.css";</style><div>a</div>','<iframe srcdoc="x"></iframe>','<video src="a.mp4"></video>'])expect(()=>htmlMotionSchema.parse({...defaultHtmlMotion,html})).toThrow();expect(()=>htmlMotionSchema.parse({...defaultHtmlMotion,fields:[defaultHtmlMotion.fields[0],defaultHtmlMotion.fields[0]]})).toThrow();});

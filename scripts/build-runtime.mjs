@@ -1,0 +1,11 @@
+import {build} from 'esbuild';
+import {mkdir,copyFile} from 'node:fs/promises';
+await mkdir('dist-runtime',{recursive:true});
+await copyFile('scripts/agent-client.mjs','dist-runtime/agent-client.mjs');
+const common={bundle:true,platform:'node',format:'esm',target:'node22',packages:'external',tsconfig:'tsconfig.base.json',alias:{'@motion-master/core':'./packages/motion-core/src/index.ts','@motion-master/schema':'./packages/motion-schema/src/index.ts','@motion-master/compiler':'./packages/motion-compiler/src/index.ts','@motion-master/render':'./packages/motion-render/src/render.ts','@motion-master/cards-starter':'./card-packs/starter/src/index.tsx','@motion-master/cards-shotcraft-motion':'./card-packs/shotcraft-motion/src/index.tsx'}};
+await build({...common,entryPoints:['src/extension-worker.ts'],outfile:'dist-runtime/actual-worker.mjs'});
+await build({...common,packages:'bundle',external:['@remotion/bundler','@remotion/renderer','ffprobe-static','react','react/jsx-runtime','remotion'],banner:{js:"import {createRequire as __mmCreateRequire} from 'node:module'; const require=__mmCreateRequire(import.meta.url);"},entryPoints:['packages/motion-mcp/src/server.ts'],outfile:'dist-runtime/actual-mcp.mjs'});
+await build({...common,entryPoints:['packages/semantic-cut/src/cli.ts'],outfile:'dist-runtime/semantic-cut.mjs'});
+await build({...common,entryPoints:['packages/semantic-cut/src/index.ts'],outfile:'dist-runtime/semantic-cut-api.mjs'});
+await build({...common,entryPoints:['packages/semantic-cut/src/media.ts'],outfile:'dist-runtime/semantic-cut-media.mjs'});
+await build({...common,entryPoints:['packages/motion-render/src/entry.tsx'],outfile:'dist-runtime/remotion-entry.js'});

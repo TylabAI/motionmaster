@@ -1,0 +1,10 @@
+{
+  "name": "@motion-master/compiler",
+  "version": "1.6.2",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@motion-master/schema": "*"
+  }
+}
