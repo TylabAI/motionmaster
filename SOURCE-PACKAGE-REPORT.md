@@ -1,6 +1,6 @@
 # Source package report
 
-Package: `MotionMaster-GitHub-Source-v1.6.2-20260926`
+Package line: `MotionMaster v1.7.0` (clean GitHub source; generated bundles use a timestamped v1.7.0 name)
 
 ## Included
 
@@ -26,8 +26,9 @@ The only `.srt` file in this package is `skills/video-motion-master/examples/sam
 
 - `npm ci`: passed; npm reported 0 vulnerabilities.
 - `npm run build`: passed.
-- `npm test`: 26 files / 113 tests passed, including UI translation coverage.
+- `npm test`: 27 files / 118 tests passed, including production-profile, scene-recipe and UI translation coverage.
 - `npm run test:api`: passed; 0 project validation issues.
-- `npm run test:mcp`: passed; 41 tools and 275 catalog entries detected.
+- `npm run test:mcp`: passed; 44 tools and 275 catalog entries detected.
+- Browser acceptance: production mode, brand fields and multi-aspect targets saved through the Studio and resolved into the expected product-promo brief.
 - `npm run doctor`: passed on the packaging host.
 - Final source tree scanned for user project names, known project IDs, local user paths, common API key formats, forbidden runtime directories and files over 20 MB.

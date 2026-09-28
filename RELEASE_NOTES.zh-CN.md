@@ -1,6 +1,18 @@
-# MotionMaster v1.6.2
+# MotionMaster v1.7.0
 
 [English](RELEASE_NOTES.md) · [简体中文](RELEASE_NOTES.zh-CN.md)
+
+本版本新增产品宣传片、功能发布、教程、数据报告和口播讲解的制作工作流，同时保留 MotionMaster 原有的确定性时间轴和可编辑卡片体系。
+
+## 1.7.0 新增
+
+- 项目制作档案：制作模式、叙事配方、目标画幅与品牌规则
+- 设置页新增品牌颜色、字体、Logo/来源网址、图标风格与禁用风格
+- 14 个场景配方及按模式组织的叙事序列，并通过 HTTP 与 MCP 开放
+- Agent 编排任务包含制作简报，配置变化会使旧任务指纹失效
+- 新增模板连续重复、视觉形式单一、品牌资料缺失和颜色对比度不足检查
+- 按场景配方选择模板，且不会把缩小原视频作为默认动效方式
+- 新增 MCP 工具：`motion_production_catalog`、`motion_production_brief`、`motion_project_profile_update`
 
 这是面向 GitHub 的首个整理版源码包。MotionMaster 是一款完全免费的开源 Web 应用，以视频动效生成和编辑为核心，并提供一套可由 Agent 通过 MCP 接管、编排和继续开发的能力层。
 

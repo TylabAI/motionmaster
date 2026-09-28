@@ -670,7 +670,7 @@ export const App = () => {
   } as CSSProperties;
   return <main className={`studio ${paletteClass} ${layoutResize ? 'is-resizing' : ''}`} style={studioStyle}>
     <header className="topbar">
-      <div className="brand"><span className="brand-mark">M</span><strong>MOTION MASTER</strong><span>v0.3 Studio</span></div>
+      <div className="brand"><span className="brand-mark">M</span><strong>MOTION MASTER</strong><span>v1.7 Studio</span></div>
       <nav><button className={!assetsOpen ? "active" : ""} onClick={() => setAssetsOpen(false)}>编辑台</button><button className={assetsOpen ? "active" : ""} onClick={() => { setPlaying(false); videoRef.current?.pause(); setAssetsOpen(true); }}>动效资产</button></nav>
       <div className="project-status"><ProjectName key={project.projectId} title={project.title} disabled={busy||project.preCut?.status==='running'} onRename={async title=>{
         const next=await request<MotionProject>(`/api/projects/${project.projectId}`,{method:'PATCH',body:JSON.stringify({expectedVersion:project.version,patch:{title}})});
@@ -794,7 +794,7 @@ export const App = () => {
     {arrangementOpen&&project.motionArrangement&&<MotionArrangementPanel project={project} onClose={()=>setArrangementOpen(false)} agentUrl={`${apiPrefix}/agent.md`}/>}
     {preCutOpen&&<PreCutReview project={project} busy={busy||project.preCut?.status==='running'} onClose={()=>setPreCutOpen(false)} onSeek={frame=>{setPreCutOpen(false);previewDeletedRange({startFrame:frame,endFrame:frame+1});}} onDecision={decideCut} onAnalyze={analyzeAgain} onSemanticExport={exportSemanticTask} onSemanticImport={importSemanticResult} onConfirm={confirmCut} imageBase={`${apiPrefix}/api/projects/${project.projectId}/precut/frame`}/>}
     {htmlDesignOpen&&selectedCard&&<HtmlDesignPanel card={selectedCard} project={project} onClose={()=>setHtmlDesignOpen(false)} onStart={async prompt=>{pushUndo();setProject(await request<MotionProject>(`/api/projects/${project.projectId}/html-design`,{method:'POST',body:JSON.stringify({expectedVersion:project.version,cardId:selectedCard.cardId,prompt,provider:analysisProvider})}));}} onCancel={async()=>setProject(await request<MotionProject>(`/api/projects/${project.projectId}/html-design/cancel`,{method:'POST',body:JSON.stringify({expectedVersion:project.version})}))} onImport={async spec=>{pushUndo();const next=await request<MotionProject>(`/api/projects/${project.projectId}/card-design`,{method:'POST',body:JSON.stringify({expectedVersion:project.version,cardId:selectedCard.cardId,spec})});setProject(next);setNotice('HTML动效已校验并应用');}}/>}
-    {settingsOpen&&<AsrSettingsPanel request={request} onClose={()=>setSettingsOpen(false)} onSaved={message=>{setNotice(message);appendConsole('success',message);}}/>}
+    {settingsOpen&&project&&<AsrSettingsPanel request={request} project={project} onProjectUpdated={setProject} onClose={()=>setSettingsOpen(false)} onSaved={message=>{setNotice(message);appendConsole('success',message);}}/>}
     {srtOpen && <div className="modal-backdrop" onPointerDown={(event) => { if (event.target === event.currentTarget) setSrtOpen(false); }}>
       <section className="srt-manager" role="dialog" aria-modal="true" aria-label="字幕与 SRT 管理">
         <header><div><strong>字幕 / SRT 管理</strong><span>导入、查看和导出当前项目字幕</span></div><button onClick={() => setSrtOpen(false)}>×</button></header>

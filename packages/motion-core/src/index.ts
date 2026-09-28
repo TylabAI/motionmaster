@@ -2,7 +2,8 @@ import {htmlVideoContentError} from '../../motion-schema/src/html-video-validati
 import {htmlMotionSchema,validateHtmlValues} from '../../motion-schema/src/html-motion';
 import {appendFile, mkdir, open, readFile, readdir, rename, unlink, writeFile} from 'node:fs/promises';
 import path from 'node:path';
-import {motionProjectSchema, projectIdSchema, type EditRange, type MotionCardInstance, type MotionProject} from '@motion-master/schema';
+import {motionProjectSchema, productionProfileSchema, projectIdSchema, type EditRange, type MotionCardInstance, type MotionProject} from '@motion-master/schema';
+import {contrastRatio} from './production-profile';
 export {adjustCardTiming, type CardTimingDragMode} from './timing';
 
 export class VersionConflictError extends Error {
@@ -31,7 +32,7 @@ export const upgradeProject = (project: MotionProject): MotionProject => {
   return motionProjectSchema.parse(next);
 };
 
-export const createProject = (input: {projectId: string; title: string; width?: number; height?: number; fps?: number; durationFrames?: number}): MotionProject => {
+export const createProject = (input: {projectId: string; title: string; width?: number; height?: number; fps?: number; durationFrames?: number; productionProfile?: unknown}): MotionProject => {
   const timestamp = now();
   return motionProjectSchema.parse({
     schemaVersion: '0.2.0',
@@ -44,6 +45,7 @@ export const createProject = (input: {projectId: string; title: string; width?: 
     style: 'hud',
     font: 'Inter, Microsoft YaHei, sans-serif',
     lintOff: [],
+    productionProfile: productionProfileSchema.parse(input.productionProfile ?? {}),
     editReview: {status: 'draft', revision: 0},
     media: {fit: 'cover', scale: 1, offsetX: 0, offsetY: 0, opacity: 1, muted: true},
     styleProfileId: 'obsidian-hud',
@@ -79,6 +81,7 @@ export const moveSegmentGroup = (project: MotionProject, groupId: string, reques
 };
 
 export {applyEditPlan} from './edit-plan';
+export {contrastRatio, productionBrief, productionCatalog, productionModes, productionSceneRecipes, resolvedNarrativeRecipe, sceneRecipe} from './production-profile';
 
 export const validateProject = (project: MotionProject): ProjectValidationIssue[] => {
   const result = motionProjectSchema.safeParse(project);
@@ -100,6 +103,25 @@ export const validateProject = (project: MotionProject): ProjectValidationIssue[
     const current = primaryCards[index];
     if (!project.lintOff.includes('CARD_TOO_FREQUENT') && current.startFrame - previous.startFrame < project.canvas.fps * 6) issues.push({code: 'CARD_TOO_FREQUENT', cardId: current.cardId, message: '主卡出现过密，建议至少间隔 6 秒', severity: 'warning'});
   }
+  if (!project.lintOff.includes('CARD_TYPE_REPETITION')) {
+    for (let index = 2; index < primaryCards.length; index += 1) {
+      if (primaryCards[index].cardType === primaryCards[index - 1].cardType && primaryCards[index].cardType === primaryCards[index - 2].cardType) {
+        issues.push({code: 'CARD_TYPE_REPETITION', cardId: primaryCards[index].cardId, message: '连续三个主卡使用同一模板，请改变视觉形式', severity: 'warning'});
+        break;
+      }
+    }
+  }
+  if (!project.lintOff.includes('MOTION_VARIETY_LOW') && primaryCards.length >= 5) {
+    const counts = new Map<string, number>();
+    for (const card of primaryCards) counts.set(card.cardType, (counts.get(card.cardType) ?? 0) + 1);
+    if (Math.max(...counts.values()) / primaryCards.length > .6 || counts.size < 3) issues.push({code: 'MOTION_VARIETY_LOW', message: '主卡视觉形式过于单一，请混合标题、步骤、对比、数据和总结等不同形式', severity: 'warning'});
+  }
+  if (project.productionProfile.mode !== 'talking-head' && !project.lintOff.includes('BRAND_PROFILE_INCOMPLETE')) {
+    const brand = project.productionProfile.brand;
+    const missing = [!brand.name && '品牌名', !brand.sourceUrl && '品牌来源', !brand.logoUrl && 'Logo'].filter(Boolean);
+    if (missing.length) issues.push({code: 'BRAND_PROFILE_INCOMPLETE', message: `产品类视频缺少品牌资料：${missing.join('、')}`, severity: 'warning'});
+  }
+  if (!project.lintOff.includes('BRAND_CONTRAST_LOW') && contrastRatio(project.productionProfile.brand.textColor, project.productionProfile.brand.backgroundColor) < 4.5) issues.push({code: 'BRAND_CONTRAST_LOW', message: '品牌文字与背景对比度低于 4.5:1', severity: 'warning'});
   if (!project.lintOff.includes('VIDEO_MUST_COVER') && project.media.fit !== 'cover') issues.push({code: 'VIDEO_MUST_COVER', message: '口播视频建议使用 cover 裁剪，避免画面拉伸或黑边', severity: 'warning'});
   for (const segment of project.timeline.segments) {
     if (segment.endFrame <= segment.startFrame) issues.push({code: 'SEGMENT_RANGE_INVALID', message: `Invalid subtitle segment: ${segment.segmentId}`, severity: 'error'});

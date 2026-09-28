@@ -1,7 +1,7 @@
 {
   "id": "motion-studio",
   "name": "Motion Studio",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "schemaVersion": "0.2.0",
   "entrypoints": {
     "studio": "npm start",

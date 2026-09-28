@@ -1,8 +1,18 @@
-# MotionMaster v1.6.2
+# MotionMaster v1.7.0
 
 [English](RELEASE_NOTES.md) · [简体中文](RELEASE_NOTES.zh-CN.md)
 
-This is the first GitHub-ready source release of MotionMaster. MotionMaster is a completely free and open-source web application centered on video motion generation and editing, with an MCP capability layer that lets Agents operate, orchestrate, and extend the product.
+This release adds a production workflow for product promos, feature launches, tutorials, data reports, and talking-head explainers while preserving MotionMaster's deterministic timeline and editable card system.
+
+## New in 1.7.0
+
+- Project production profiles with mode, narrative recipe, target aspect ratios, and brand rules
+- A Studio settings tab for reusable brand colors, typography, logo/source URLs, icon style, and forbidden styles
+- Fourteen scene recipes and mode-specific narrative sequences exposed through HTTP and MCP
+- Production briefs included in Agent arrangement tasks and stale-task fingerprints
+- Quality gates for repetitive templates, low visual variety, incomplete brand setup, and low color contrast
+- Recipe-aware template selection without making source-video shrinking the default treatment
+- New MCP tools: `motion_production_catalog`, `motion_production_brief`, and `motion_project_profile_update`
 
 ## Product highlights
 

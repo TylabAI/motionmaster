@@ -17,9 +17,9 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {starterCardDefinitions} from '@motion-master/cards-starter';
 import {compileSrtMotionPlan} from '@motion-master/compiler';
-import {applyEditPlan, createProject, defaultDataDir, FileProjectRepository, moveSegmentGroup, ProjectNotFoundError, upgradeProject, validateProject, VersionConflictError} from '@motion-master/core';
+import {applyEditPlan, createProject, defaultDataDir, FileProjectRepository, moveSegmentGroup, productionBrief, productionCatalog, ProjectNotFoundError, upgradeProject, validateProject, VersionConflictError} from '@motion-master/core';
 import {findRoughCut, renderProjectAlphaMov, renderProjectMp4, renderProjectRoughCut, renderProjectStills} from '@motion-master/render';
-import {motionProjectSchema, type MotionCardInstance} from '@motion-master/schema';
+import {motionProjectSchema, productionProfileSchema, type MotionCardInstance} from '@motion-master/schema';
 import {asrSettingsStore} from './asr-settings';
 import {asrModelService} from './asr-models';
 
@@ -87,7 +87,8 @@ const routeApi = async (request: IncomingMessage, response: ServerResponse, path
   }
   if(pathname==='/api/html-motion/protocol')return send(response,200,{format:'motion-html-design@1',instructions:htmlMotionInstructions,specSchema:z.toJSONSchema(htmlMotionSchema,{io:'output'}),start:`${prefix}/api/projects/{id}/html-design`,task:`${prefix}/api/projects/{id}/html-design/task`,submit:`${prefix}/api/projects/{id}/html-design/result`});
   if(pathname==='/api/trash'&&method==='GET')return send(response,200,await repository.trashList());
-  if (pathname === '/api/system') return send(response, 200, {version: '1.6.2-asr-model-manager', dataDir: repository.rootDir, capabilities: {configurableAsr:true,managedAsrModels:true,requiredWordTimestamps:true,defaultAsrModel:'large-v3-turbo',htmlMotionBridge: true, htmlVideoTemplates: 23, editableHtmlFields: true, restorableCardDesign: true, automaticPreCut: false, semanticMotionArrangement: true, wordBoundScenes: true, agentMotionProtocol: true, manualPreCut: true, recoverableCuts: true, projectEditing: true, srtImport: true, timelineEditing: true, schemaDrivenCards: true, realVideoPreview: true, jsonRoundTrip: true, lint: true, stillRender: true, mp4Export: true, alphaExport: true}});
+  if (pathname === '/api/system') return send(response, 200, {version: '1.7.0-production-workflow', dataDir: repository.rootDir, capabilities: {productionProfiles:true,brandProfiles:true,sceneRecipes:true,multiAspectTargets:true,qualityGates:true,configurableAsr:true,managedAsrModels:true,requiredWordTimestamps:true,defaultAsrModel:'large-v3-turbo',htmlMotionBridge: true, htmlVideoTemplates: 23, editableHtmlFields: true, restorableCardDesign: true, automaticPreCut: false, semanticMotionArrangement: true, wordBoundScenes: true, agentMotionProtocol: true, manualPreCut: true, recoverableCuts: true, projectEditing: true, srtImport: true, timelineEditing: true, schemaDrivenCards: true, realVideoPreview: true, jsonRoundTrip: true, lint: true, stillRender: true, mp4Export: true, alphaExport: true}});
+  if(pathname==='/api/production/recipes'&&method==='GET')return send(response,200,productionCatalog());
   if(pathname==='/api/settings/asr'&&method==='GET')return send(response,200,await asrSettings.get());
   if(pathname==='/api/settings/asr'&&method==='PATCH')return send(response,200,await asrSettings.update(await body(request)));
   if(pathname==='/api/settings/asr/models'&&method==='GET')return send(response,200,{models:await asrModels.list()});
@@ -96,13 +97,18 @@ const routeApi = async (request: IncomingMessage, response: ServerResponse, path
   if (pathname === '/api/projects' && method === 'GET') return send(response, 200, await repository.list());
   if (pathname === '/api/projects' && method === 'POST') {
     const input = await body(request);
-    return send(response, 201, await repository.create(createProject({projectId: String(input.projectId ?? ''), title: String(input.title ?? ''), durationFrames: Number(input.durationFrames ?? 5400), width: Number(input.width ?? 1920), height: Number(input.height ?? 1080)})));
+    return send(response, 201, await repository.create(createProject({projectId: String(input.projectId ?? ''), title: String(input.title ?? ''), durationFrames: Number(input.durationFrames ?? 5400), width: Number(input.width ?? 1920), height: Number(input.height ?? 1080),productionProfile:input.productionProfile?productionProfileSchema.parse(input.productionProfile):undefined})));
   }
   const match = /^\/api\/projects\/([^/]+)(?:\/(.*))?$/.exec(pathname);
   if (!match) return send(response, 404, {error: 'Route not found'});
   const projectId = decodeURIComponent(match[1]);
   const action = match[2] ?? '';
   if (!action && method === 'GET') return send(response, 200, await repository.get(projectId));
+  if(action==='production-brief'&&method==='GET')return send(response,200,productionBrief(await repository.get(projectId)));
+  if(action==='profile'&&method==='PATCH'){
+    const input=await body(request),profile=productionProfileSchema.parse(input.profile);
+    return send(response,200,await repository.mutate(projectId,Number(input.expectedVersion),'production.profile_updated',next=>{next.productionProfile=profile;},{mode:profile.mode,narrativeRecipe:profile.narrativeRecipe,targetAspectRatios:profile.targetAspectRatios}));
+  }
   if(!action&&method==='DELETE'){const input=await body(request);await repository.softDelete(projectId,Number(input.expectedVersion));return send(response,200,{projectId,deleted:true,recoverable:true});}
   if(action==='html-design'&&method==='POST'){const input=await body(request);if(!['codex','external'].includes(String(input.provider)))throw Error('无效驱动');return send(response,202,await htmlDesign.start(projectId,Number(input.expectedVersion),String(input.cardId),String(input.prompt??''),input.provider as 'codex'|'external'));}
   if(action==='html-design'&&method==='GET')return send(response,200,await htmlDesign.status(projectId));

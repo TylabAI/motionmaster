@@ -56,6 +56,7 @@ MotionMaster-owned code is released under the MIT License, with no software subs
 | Rough cutting | Generate keep/remove ranges from word timestamps, silence, and semantic analysis; removed material stays recoverable |
 | Dual timelines | Use the rough-cut timeline to clean source footage and the motion timeline for captions, the main track, and layered motion |
 | Motion library | Browse 275 catalog entries with three-level classification, search, preview, template replacement, and property editing |
+| Production workflow | Choose a production mode, narrative recipe, target aspect ratios, and reusable brand profile; Agents receive the same brief through MCP |
 | Interface languages | Switch between Simplified Chinese and English from the top-right toolbar without reloading; the preference persists locally |
 | Visual editing | Select, move, and scale cards in the preview; move, split, snap, and multi-select items on the timeline |
 | Export | Produce H.264 MP4, transparent ProRes 4444 MOV, JSON, and still images |
@@ -77,6 +78,8 @@ flowchart LR
 ```
 
 Timeline timestamps always come from ASR or caption data. Switching recognition models changes the recognition source; it does not cause a language model to guess timeline positions.
+
+For product promos, feature launches, tutorials, and data reports, Settings now stores a project production profile. Motion arrangement receives a mode-specific scene recipe and brand constraints, while quality gates flag unsupported brand setup, low contrast, and repetitive template use. See [Production Workflow](docs/PRODUCTION-WORKFLOW.md).
 
 The interface follows the browser language on first launch and can be switched at any time from the top-right language menu. Product controls, dialogs, timeline labels, asset classification, and ASR settings are localized; project names, imported captions, transcripts, and card copy stay exactly as authored. See [Interface languages](docs/I18N.md).
 
@@ -105,6 +108,7 @@ flowchart TB
     API --> Core
     Core --> Repo[Local Project Repository]
     Core --> ASR[ASR and Semantic Rough Cut]
+    Core --> Brief[Production and Brand Brief]
     Core --> Cards[Schema-driven Motion Registry]
     Core --> Render[Remotion Renderer]
     ASR --> FW[faster-whisper]

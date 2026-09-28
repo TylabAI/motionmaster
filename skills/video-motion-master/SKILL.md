@@ -10,15 +10,16 @@ Turn subtitles into a version-safe Motion Project by selecting registered cards,
 ## Required Workflow
 
 1. Call `motion_system_probe`. Stop and explain the missing local dependency if the MCP is unavailable.
-2. Call `motion_card_catalog`. Treat this result as the only allowed card vocabulary.
-3. Call `motion_project_get` and retain its current `version` as `expectedVersion`.
-4. Read the SRT and first form a segment plan: one argument, one short English label, and one semantic accent per segment.
-5. Produce cards using the contract in `references/overlay-json-contract.md` and the selection rules in `references/orchestration-rules.md`.
-6. Prefer `motion_srt_import` for the deterministic baseline. Use `motion_plan_apply` only when an explicit curated card plan is required.
-7. Call `motion_project_validate`. Fix errors; fix warnings unless the user explicitly adds the rule code to `lintOff`.
-8. On `VERSION_CONFLICT`, read the project again and merge around human edits. Never overwrite with a stale version.
-9. Call `motion_preview_render` and inspect the returned start/middle/end artifacts before claiming the project is ready.
-10. Call `motion_alpha_render` only after lint passes and the user requests delivery.
+2. Call `motion_production_catalog`, then `motion_production_brief`. Use the resolved production mode, narrative recipe, target aspect ratios, brand profile, and forbidden styles as the creative contract.
+3. Call `motion_card_catalog`. Treat this result as the only allowed card vocabulary.
+4. Call `motion_project_get` and retain its current `version` as `expectedVersion`.
+5. Read the SRT and form a segment plan. For product, tutorial, launch, and data modes, choose only scene recipes supported by the actual content; do not force every recipe beat.
+6. Produce cards using the contract in `references/overlay-json-contract.md` and the selection rules in `references/orchestration-rules.md`.
+7. Prefer `motion_srt_import` for the deterministic baseline. Use `motion_plan_apply` only when an explicit curated card plan is required.
+8. Call `motion_project_validate`. Fix errors; fix warnings unless the user explicitly adds the rule code to `lintOff`.
+9. On `VERSION_CONFLICT`, read the project again and merge around human edits. Never overwrite with a stale version.
+10. Call `motion_preview_render` and inspect the returned start/middle/end artifacts in every requested target aspect ratio before claiming the project is ready.
+11. Call `motion_alpha_render` only after lint passes and the user requests delivery.
 
 ## Hard Rules
 
@@ -30,6 +31,8 @@ Turn subtitles into a version-safe Motion Project by selecting registered cards,
 - Keep `media.fit` set to `cover`.
 - Group cards with `seg` and segments with `groupId` so a scene can move as one block.
 - Preserve `skin`, `style`, `font`, `lintOff`, and manually edited cards unless the user asks to replace them.
+- Never invent product claims, metrics, customer evidence, logos, or brand rules. Use only the project brief, transcript, project data, and user-provided sources.
+- Vary visual forms. Do not repeat one template three times in succession or shrink the source video as the default treatment.
 
 ## Card Catalog
 

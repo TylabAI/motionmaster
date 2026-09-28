@@ -34,3 +34,13 @@ it('uses split only for observed complex conflicts, and skips obstructed lightwe
 it('keeps every unobserved scene kind on the full-size source video',()=>{
  for(const kind of ['chapter','steps','comparison','emphasis','summary'])expect(sceneLayout(project(),kind,[]).split).toBe(false);
 });
+it('includes the production brief in the task fingerprint and preserves the chosen recipe',()=>{
+ const p=project();p.productionProfile.mode='product-promo';
+ const first=sceneRequest(p);expect(first.source.production.narrativeRecipe).toBe('promo-eight-beat');expect(first.instructions).toMatch(/视觉形式必须有变化/);
+ p.productionProfile.brand.name='New Brand';expect(sceneRequest(p).fingerprint).not.toBe(first.fingerprint);
+ const a=result(p);a.fingerprint=sceneRequest(p).fingerprint;(a.scenes[0] as typeof a.scenes[0]&{recipeId:string}).recipeId='process';
+ const [card]=applySceneResult(p,a);expect(card.autoScene?.recipeId).toBe('process');expect(card.content.label).toBe('使用流程');
+});
+it('rejects unknown or kind-incompatible production recipes',()=>{
+ for(const recipeId of ['not-a-recipe','brand-open']){const p=project();const a=result(p);(a.scenes[0] as typeof a.scenes[0]&{recipeId:string}).recipeId=recipeId;expect(()=>applySceneResult(p,a)).toThrow();}
+});

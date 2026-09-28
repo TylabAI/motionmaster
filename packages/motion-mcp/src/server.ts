@@ -10,9 +10,9 @@ import {agentProtocol,agentTask,finishAgentReview} from '../../motion-core/src/a
 import {semanticReviewRequest,importSemanticReview,semanticReviewResultSchema} from '../../motion-core/src/semantic-review';
 import {starterCardDefinitions} from '@motion-master/cards-starter';
 import {compileSrtMotionPlan} from '@motion-master/compiler';
-import {applyEditPlan, createProject, defaultDataDir, FileProjectRepository, moveSegmentGroup, validateProject} from '@motion-master/core';
+import {applyEditPlan, createProject, defaultDataDir, FileProjectRepository, moveSegmentGroup, productionBrief, productionCatalog, validateProject} from '@motion-master/core';
 import {renderProjectAlphaMov, renderProjectMp4, renderProjectRoughCut, renderProjectStills} from '@motion-master/render';
-import {motionCardInstanceSchema} from '@motion-master/schema';
+import {motionCardInstanceSchema,productionProfileSchema} from '@motion-master/schema';
 import path from 'node:path';
 
 if (!process.env.MOTION_MASTER_DATA_DIR && process.env.PIPCLAW_EXTENSION_DATA) {
@@ -21,7 +21,7 @@ if (!process.env.MOTION_MASTER_DATA_DIR && process.env.PIPCLAW_EXTENSION_DATA) {
 if (!process.env.MOTION_MASTER_REMOTION_ENTRY && process.env.PIPCLAW_EXTENSION_ROOT) {
   process.env.MOTION_MASTER_REMOTION_ENTRY = path.join(process.env.PIPCLAW_EXTENSION_ROOT, 'runtime', 'remotion-entry.js');
 }
-const server = new McpServer({name: 'motion-studio', version: '1.6.2'});
+const server = new McpServer({name: 'motion-studio', version: '1.7.0'});
 const repository = new FileProjectRepository(defaultDataDir());
 const json = (value: unknown) => ({content: [{type: 'text' as const, text: JSON.stringify(value, null, 2)}]});
 const projectId = z.string().default('sample-project');
@@ -51,9 +51,12 @@ server.registerTool('motion_trash_list',{description:'List recoverable projects 
 server.registerTool('motion_project_restore',{description:'Restore a trashed project including source video and timeline.',inputSchema:{projectId,expectedVersion:z.number().int()}},async({projectId,expectedVersion})=>json(await repository.restore(projectId,expectedVersion)));
 
 server.registerTool('motion_system_probe', {description: 'Report Motion Studio data and render capabilities.'}, async () => json({
-  coreVersion: '1.6.2', schemaVersion: '0.2.0', transport: 'stdio', dataDir: repository.rootDir,agentProtocol:agentProtocol(),
-  capabilities: {projectEditing: true, projectPersistence: true, srtImport: true, timelineEditing: true, segmentSceneEditing: true, schemaDrivenCards: true, realVideoPreview: true, jsonRoundTrip: true, lint: true, cardCatalog: true, previewPlayer: true, stillRender: true, mp4Export: true, alphaExport: true},
+  coreVersion: '1.7.0', schemaVersion: '0.2.0', transport: 'stdio', dataDir: repository.rootDir,agentProtocol:agentProtocol(),
+  capabilities: {productionProfiles:true,brandProfiles:true,sceneRecipes:true,multiAspectTargets:true,qualityGates:true,projectEditing: true, projectPersistence: true, srtImport: true, timelineEditing: true, segmentSceneEditing: true, schemaDrivenCards: true, realVideoPreview: true, jsonRoundTrip: true, lint: true, cardCatalog: true, previewPlayer: true, stillRender: true, mp4Export: true, alphaExport: true},
 }));
+server.registerTool('motion_production_catalog',{description:'List supported production modes, narrative recipes, scene recipes, recommended card types, and beat structures.',inputSchema:{}},async()=>json(productionCatalog()));
+server.registerTool('motion_production_brief',{description:'Read the resolved project production brief before planning or generating motion.',inputSchema:{projectId}},async({projectId})=>json(productionBrief(await repository.get(projectId))));
+server.registerTool('motion_project_profile_update',{description:'Update project production mode, narrative recipe, target aspect ratios, and brand profile.',inputSchema:{projectId,expectedVersion:z.number().int().nonnegative(),profile:productionProfileSchema}},async({projectId,expectedVersion,profile})=>json(await repository.mutate(projectId,expectedVersion,'production.profile_updated',next=>{next.productionProfile=profile;},{mode:profile.mode,narrativeRecipe:profile.narrativeRecipe,targetAspectRatios:profile.targetAspectRatios})));
 server.registerTool('motion_project_list', {description: 'List persistent Motion Studio projects.'}, async () => json(await repository.list()));
 server.registerTool('motion_project_create', {description: 'Create a persistent Motion Studio project.', inputSchema: {projectId: z.string(), title: z.string().min(1), durationFrames: z.number().int().positive().default(900)}}, async (input) => json(await repository.create(createProject(input))));
 server.registerTool('motion_project_get', {description: 'Read a Motion Project and its current version.', inputSchema: {projectId}}, async ({projectId}) => json(await repository.get(projectId)));

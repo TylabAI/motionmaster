@@ -19,7 +19,7 @@ const rendererAvailable = (() => { try { require.resolve('@remotion/renderer'); 
 const ffprobeAvailable = (() => { try { return existsSync(require('ffprobe-static').path); } catch { return false; } })();
 const chromeAvailable = existsSync(chrome);
 console.log(JSON.stringify({
-  product: 'motion-studio', version: '1.6.2', platform: process.platform,
+  product: 'motion-studio', version: '1.7.0', platform: process.platform,
   capabilities: [...results, {capability: 'chrome', required: true, available: chromeAvailable, path: chrome}, {capability: 'remotion-renderer', required: true, available: rendererAvailable}, {capability: 'ffprobe-static', required: true, available: ffprobeAvailable}],
   render: {previewPlayer: true, stillRender: chromeAvailable && rendererAvailable, mp4Export: chromeAvailable && rendererAvailable, alphaExport: chromeAvailable && rendererAvailable && ffprobeAvailable},
 }, null, 2));

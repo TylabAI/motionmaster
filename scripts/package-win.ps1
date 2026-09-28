@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 $source = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $parent = Split-Path $source -Parent
-$destination = Join-Path $parent 'MotionMaster-v1.6.2-win'
-$zip = Join-Path $parent 'MotionMaster-v1.6.2-win.zip'
+$destination = Join-Path $parent 'MotionMaster-v1.7.0-win'
+$zip = Join-Path $parent 'MotionMaster-v1.7.0-win.zip'
 $resolvedParent = [IO.Path]::GetFullPath($parent).TrimEnd([IO.Path]::DirectorySeparatorChar) + [IO.Path]::DirectorySeparatorChar
 $resolvedDestination = [IO.Path]::GetFullPath($destination)
 if (-not $resolvedDestination.StartsWith($resolvedParent, [StringComparison]::OrdinalIgnoreCase)) { throw 'Release destination escaped the expected parent directory.' }

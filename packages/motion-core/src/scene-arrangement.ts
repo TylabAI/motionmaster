@@ -4,9 +4,10 @@ import {z} from 'zod';
 import type {MotionProject,MotionCardInstance} from '@motion-master/schema';
 import {sourceToEdited} from '../../semantic-cut/src/index';
 import {applyEditPlan} from './edit-plan';
+import {productionBrief,sceneRecipe} from './production-profile';
 
 export const sceneResultSchema=z.object({projectId:z.string(),fingerprint:z.string(),summary:z.string().max(2000),limitations:z.array(z.string().max(500)).max(20),scenes:z.array(z.object({
- firstWordId:z.string(),lastWordId:z.string(),kind:z.enum(['chapter','steps','comparison','emphasis','summary']),title:z.string().min(1).max(40),body:z.string().max(100),reason:z.string().min(4).max(500),
+ firstWordId:z.string(),lastWordId:z.string(),kind:z.enum(['chapter','steps','comparison','emphasis','summary']),recipeId:z.string().optional(),title:z.string().min(1).max(40),body:z.string().max(100),reason:z.string().min(4).max(500),
  items:z.array(z.object({text:z.string().min(1).max(32),wordId:z.string()}).strict()).max(4),
  // An observation is limited to its sampled image, never treated as video tracking.
  frameId:z.string().nullable(),protectedRegions:z.array(z.object({x:z.number().min(0).max(100),y:z.number().min(0).max(100),width:z.number().positive().max(100),height:z.number().positive().max(100)}).strict()).max(8)
@@ -19,9 +20,11 @@ export function sceneRequest(p:MotionProject,prefix=''){
  const deleted=new Set(p.transcript?.cutDecisions.filter(d=>p.editPlan?.removedRanges.some(r=>r.startFrame<=d.startFrame&&r.endFrame>=d.endFrame)).flatMap(d=>d.sourceWordIds)??[]);
  const words=p.transcript?.wordCues.filter(w=>w.keep!==false&&!deleted.has(w.wordId)&&kept.some(r=>w.startFrame<r.endFrame&&w.endFrame>r.startFrame))??[];
  if(!words.length)throw new Error('没有可用于编排的保留逐词字幕');
- const source={assetId:p.media.assetId,canvas:p.canvas,words,keptRanges:kept,cards:p.timeline.cards,frames:p.motionArrangement?.frames??[]};
+ const production=productionBrief(p);
+ const source={assetId:p.media.assetId,canvas:p.canvas,words,keptRanges:kept,cards:p.timeline.cards,frames:p.motionArrangement?.frames??[],production};
  const fingerprint=createHash('sha256').update(JSON.stringify(source,(_key,v)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.fromEntries(Object.keys(v).sort().filter(k=>v[k]!==undefined).map(k=>[k,v[k]])):v)).digest('hex');
- return {format:'motion-scene-arrangement@1',projectId:p.projectId,jobId:p.motionArrangement?.jobId,expectedVersion:p.version,fingerprint,instructions:sceneInstructions,source,resultSchema:z.toJSONSchema(sceneResultSchema,{io:'output'}),
+ const productionInstructions=p.productionProfile.mode==='talking-head'?'':`\n当前制作模式为 ${production.mode}，叙事配方为 ${production.narrativeRecipe}。从 source.production.sequence 中选择与真实内容相符的 recipeId；不要求凑齐全部场景。遵循品牌色、字体和禁用风格，视觉形式必须有变化，不能让每个场景都缩小原视频。`;
+ return {format:'motion-scene-arrangement@1',projectId:p.projectId,jobId:p.motionArrangement?.jobId,expectedVersion:p.version,fingerprint,instructions:sceneInstructions+productionInstructions,source,resultSchema:z.toJSONSchema(sceneResultSchema,{io:'output'}),
  frameResources:source.frames.map(f=>({...f,seconds:f.frame/p.canvas.fps,url:`${prefix}/api/projects/${p.projectId}/motion-arrangement/frame/${f.id}`})),submit:{method:'POST',url:`${prefix}/api/projects/${p.projectId}/motion-arrangement/result`}};
 }
 
@@ -46,6 +49,9 @@ export function applySceneResult(p:MotionProject,raw:unknown){
  const words=request.source.words,index=new Map(words.map((w,i)=>[w.wordId,i]));
  const warnings:string[]=[];
  const prepared=result.scenes.map((s,i)=>{
+  const recipe=sceneRecipe(s.recipeId);
+  if(s.recipeId&&!recipe)throw new Error(`未知场景配方：${s.recipeId}`);
+  if(recipe&&recipe.kind!==s.kind)throw new Error(`场景配方 ${s.recipeId} 与场景类型不一致`);
   const first=index.get(s.firstWordId),last=index.get(s.lastWordId);
   if(first===undefined||last===undefined||last<first)throw new Error('场景引用了不存在或倒序的词句');
   if(s.kind==='comparison'&&s.items.length!==2||s.kind==='steps'&&s.items.length<2)throw new Error('对比需要两项，步骤需要至少两项');
@@ -61,12 +67,13 @@ export function applySceneResult(p:MotionProject,raw:unknown){
   const layout=sceneLayout(p,s.kind,regions);
   if(layout.skip){warnings.push(`跳过“${s.title}”：没有足够的安全叠加区域，轻量强调不触发视频缩小`);return null;}
   if(!regions.length)warnings.push(`“${s.title}”采用全幅视频上的小面积叠加；缺少可信画面保护区，请预览确认位置`);
-  const card:MotionCardInstance={cardId:`auto-scene-${request.fingerprint.slice(0,10)}-${i+1}`,cardType:'explain-scene',cardVersion:'1',trackId:'overlay-main',startFrame,durationFrames:endFrame-startFrame,content:{title:s.title,body:s.body,reason:s.reason},layout:{...layout.box,scale:1},appearance:{accentRole:s.kind==='comparison'?'amber':s.kind==='summary'?'lime':'cyan'},motion:{enterFrames:12,exitFrames:10},sourceSegmentIds:[],autoScene:{firstWordId:s.firstWordId,lastWordId:s.lastWordId,assetId:p.media.assetId??'',followWords:true,kind:s.kind,split:layout.split,side:layout.side,items}};
+  const card:MotionCardInstance={cardId:`auto-scene-${request.fingerprint.slice(0,10)}-${i+1}`,cardType:'explain-scene',cardVersion:'1',trackId:'overlay-main',startFrame,durationFrames:endFrame-startFrame,content:{title:s.title,body:s.body,reason:s.reason},layout:{...layout.box,scale:1},appearance:{accentRole:s.kind==='comparison'?'amber':s.kind==='summary'?'lime':'cyan'},motion:{enterFrames:12,exitFrames:10},sourceSegmentIds:[],autoScene:{firstWordId:s.firstWordId,lastWordId:s.lastWordId,assetId:p.media.assetId??'',followWords:true,kind:s.kind,recipeId:s.recipeId,split:layout.split,side:layout.side,items}};
   const choices:Record<string,string[]>= {chapter:['frame-bold-signal','frame-build-minimal'],steps:['frame-swiss-grid','frame-takram-organic'],comparison:['frame-electric-studio'],emphasis:['frame-creative-voltage','frame-bold-poster'],summary:['frame-logo-outro','frame-warm-grain']};
-  const options=choices[s.kind],variant=options[i%options.length],definition=htmlVideoCardDefinitions.find(d=>d.cardType==='hv-'+variant)!;
+  const recipeOptions=(recipe?.recommendedCardTypes??[]).map(type=>htmlVideoCardDefinitions.find(d=>d.cardType===type)).filter((d):d is (typeof htmlVideoCardDefinitions)[number]=>Boolean(d));
+  const options=choices[s.kind],variant=options[i%options.length],definition=recipeOptions[i%Math.max(1,recipeOptions.length)]??htmlVideoCardDefinitions.find(d=>d.cardType==='hv-'+variant)!;
   // Template appearance and source-video layout are independent decisions.
   card.cardType=definition.cardType;card.cardVersion=definition.version;card.appearance={...definition.defaults.appearance};
-  card.content={title:s.title,body:s.body,label:{chapter:'章节',steps:'步骤',comparison:'对比',emphasis:'重点',summary:'总结'}[s.kind],items:items.map(item=>item.text).join('\n'),source:'',reason:s.reason};
+  card.content={title:s.title,body:s.body,label:recipe?.label??{chapter:'章节',steps:'步骤',comparison:'对比',emphasis:'重点',summary:'总结'}[s.kind],items:items.map(item=>item.text).join('\n'),source:'',reason:s.reason};
   return card;
  }).filter((card):card is MotionCardInstance=>card!==null).sort((a,b)=>a.startFrame-b.startFrame);
  const accepted:MotionCardInstance[]=[];

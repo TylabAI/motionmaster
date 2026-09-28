@@ -9,6 +9,33 @@ export const canvasSchema = z.object({
   durationFrames: z.number().int().positive(),
 });
 
+export const productionModeSchema = z.enum(['talking-head', 'product-promo', 'feature-launch', 'tutorial', 'data-report']);
+export const narrativeRecipeSchema = z.enum(['auto', 'promo-eight-beat', 'feature-launch', 'tutorial-flow', 'data-story']);
+export const targetAspectRatioSchema = z.enum(['16:9', '4:3', '1:1', '9:16']);
+const hexColorSchema = z.string().regex(/^#[0-9a-f]{6}$/i, 'Brand colors must use six-digit hex values');
+
+export const brandProfileSchema = z.object({
+  name: z.string().max(120).default(''),
+  tagline: z.string().max(240).default(''),
+  sourceUrl: z.string().url().optional(),
+  logoUrl: z.string().url().optional(),
+  primaryColor: hexColorSchema.default('#25d0b1'),
+  secondaryColor: hexColorSchema.default('#5b8cff'),
+  backgroundColor: hexColorSchema.default('#0b0f14'),
+  textColor: hexColorSchema.default('#f5f8ff'),
+  fontFamily: z.string().max(200).default('Inter, Microsoft YaHei, sans-serif'),
+  radius: z.number().min(0).max(48).default(16),
+  iconStyle: z.enum(['outline', 'solid', 'duotone', 'brand']).default('outline'),
+  forbiddenStyles: z.array(z.string().min(1).max(120)).max(20).default([]),
+}).default({name:'',tagline:'',primaryColor:'#25d0b1',secondaryColor:'#5b8cff',backgroundColor:'#0b0f14',textColor:'#f5f8ff',fontFamily:'Inter, Microsoft YaHei, sans-serif',radius:16,iconStyle:'outline',forbiddenStyles:[]});
+
+export const productionProfileSchema = z.object({
+  mode: productionModeSchema.default('talking-head'),
+  narrativeRecipe: narrativeRecipeSchema.default('auto'),
+  targetAspectRatios: z.array(targetAspectRatioSchema).min(1).max(4).refine(values => new Set(values).size === values.length, 'Target aspect ratios must be unique').default(['16:9']),
+  brand: brandProfileSchema,
+}).default({mode:'talking-head',narrativeRecipe:'auto',targetAspectRatios:['16:9'],brand:{name:'',tagline:'',primaryColor:'#25d0b1',secondaryColor:'#5b8cff',backgroundColor:'#0b0f14',textColor:'#f5f8ff',fontFamily:'Inter, Microsoft YaHei, sans-serif',radius:16,iconStyle:'outline',forbiddenStyles:[]}});
+
 export const mediaSchema = z.object({
   videoName: z.string().optional(),
   fit: z.enum(['cover', 'contain']).default('cover'),
@@ -23,7 +50,7 @@ export const mediaSchema = z.object({
 }).default({fit: 'cover', scale: 1, offsetX: 0, offsetY: 0, opacity: 1, muted: true});
 
 export const motionCardInstanceSchema = z.object({
-  autoScene:z.object({firstWordId:z.string(),lastWordId:z.string(),assetId:z.string(),followWords:z.boolean().default(true),kind:z.enum(['chapter','steps','comparison','emphasis','summary']),split:z.boolean(),side:z.enum(['left','right']),items:z.array(z.object({text:z.string(),wordId:z.string(),revealFrame:z.number().int().nonnegative()})).default([])}).optional(),
+  autoScene:z.object({firstWordId:z.string(),lastWordId:z.string(),assetId:z.string(),followWords:z.boolean().default(true),kind:z.enum(['chapter','steps','comparison','emphasis','summary']),recipeId:z.string().optional(),split:z.boolean(),side:z.enum(['left','right']),items:z.array(z.object({text:z.string(),wordId:z.string(),revealFrame:z.number().int().nonnegative()})).default([])}).optional(),
   sourceId: z.string().optional(),
   cardId: z.string().min(1),
   cardType: z.string().min(1),
@@ -99,6 +126,7 @@ export const motionProjectSchema = z.object({
   style: z.enum(['hud', 'editorial']).default('hud'),
   font: z.string().default('Inter, Microsoft YaHei, sans-serif'),
   lintOff: z.array(z.string()).default([]),
+  productionProfile: productionProfileSchema,
   editPlan: editPlanSchema.optional(),
   editReview: editReviewSchema.default({status: 'draft', revision: 0}),
   transcript: transcriptSchema.optional(),
@@ -144,6 +172,8 @@ export type EditRange = z.infer<typeof editRangeSchema>;
 export type EditPlan = z.infer<typeof editPlanSchema>;
 export type EditReview = z.infer<typeof editReviewSchema>;
 export type Transcript = z.infer<typeof transcriptSchema>;
+export type ProductionProfile = z.infer<typeof productionProfileSchema>;
+export type BrandProfile = z.infer<typeof brandProfileSchema>;
 export type MotionProject = z.infer<typeof motionProjectSchema>;
 export type RenderJob = z.infer<typeof renderJobSchema>;
 export type CardParameterDefinition = z.infer<typeof cardParameterSchema>;
